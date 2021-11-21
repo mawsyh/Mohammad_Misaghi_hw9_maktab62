@@ -9,8 +9,7 @@ function getName(cb) {
 }
 
 //the callback function
-function typeName(firstName, lastName) {
-  console.log(`${firstName} ${lastName}`);
-}
 
-getName(typeName);
+getName(function typeName(firstName, lastName) {
+  console.log(`${firstName} ${lastName}`);
+});
