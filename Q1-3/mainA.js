@@ -9,8 +9,8 @@ fs.writeFile("./newFile.txt", "This is a new file", (err) => {
 const path = "./newFile.txt";
 //METHOD 1: fs.exists
 //since this method is deprecated I recommend using method 2 instead
-fs.exists(path, function (isExist) {
-  if (isExist) {
+fs.exists(path, function (doesExist) {
+  if (doesExist) {
     console.log("METHOD1:", path, "exists.");
   } else {
     console.log("METHOD1:", path, "does NOT exists.");

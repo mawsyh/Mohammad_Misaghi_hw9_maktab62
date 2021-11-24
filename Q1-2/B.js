@@ -8,7 +8,7 @@ try {
   dataFromFromTxt = fs.readFileSync("./from.txt", "UTF-8");
 } catch (err) {
   //display the error message
-  console.log("Error:", err);
+  console.log("Error while reading:", err);
 }
 // using try/catch method for error handling
 try {
@@ -16,5 +16,5 @@ try {
   fs.writeFileSync("./to.txt", dataFromFromTxt);
 } catch (err) {
   //display the error message
-  console.log("Error:", err);
+  console.log("Error while writing:", err);
 }

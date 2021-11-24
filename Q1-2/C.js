@@ -11,10 +11,7 @@ fs.readFile("./from.txt", "UTF-8", (err, fromTxtData) => {
     fs.readFile("./append.txt", "UTF-8", (err, appendTxtData) => {
       if (err) {
         //display the error message
-        console.log(
-          "This error accured when trying to append append.txt: ",
-          err
-        );
+        console.log("This error accured when trying to read append.txt: ", err);
       } else {
         let resulatData = fromTxtData + "\n" + appendTxtData;
         fs.writeFile("./to.txt", resulatData, (err) => {
